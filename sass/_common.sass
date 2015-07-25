@@ -46,34 +46,189 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
-
++font(helioscondc-webfont, helioscondc-webfont)
++font(HeliosCondLight, HeliosCondLight)
++font(heliosextc-webfont, heliosextc-webfont)
+=hr
+	font-family: 'helioscondc-webfont', Arial, sans-serif
+	font-weight: normal
+=hl
+	font-family: 'HeliosCondLight', Arial, sans-serif
+	font-weight: normal
+=hs
+	font-family: 'heliosextc-webfont', Arial, sans-serif
+	font-weight: normal
+=ul
+	font-family: 'Ubuntu', Arial, sans-serif
+	font-weight: 300
+=un
+	font-family: 'Ubuntu', Arial, sans-serif
+	font-weight: 400
+=ub
+	font-family: 'Ubuntu', Arial, sans-serif
+	font-weight: 700
+=osb
+	font-family: 'OpenSans', Arial, sans-serif
+	font-weight: 800
+.clear
+	clear: both
+	display: table
+	height: 0
 
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
-	line-height: 1.4
+	font-size: 13px
+	line-height: 1.5
+	+ul
 
 $n: transparent
+$red: #fb4752
 // common blocks
+a
+	text-decoration: none
 
+.out
+	position: relative
+	margin: 0 auto -300px //-302 footer height
+	min-height: 100%
+	height: auto
+	background-color: #ccc // del
+	+clr
 
+.l_container
+	position: relative
+	width: 970px
+	padding: 0 15px
+	margin: 0 auto
+	+clr
 
+.first
+	position: relative
+	height: 482px
+.header__top
+	position: relative
+	z-index: 120
+.top__logo
+	margin: 8px 0
+	float: left
+	a
+		+s(t_logo)
+		display: block
+		+hide-text
 
+.top__call
+	float: right
+	width: 430px
+	.btn
+		float: right
+		margin-top: 20px
+		text-transform: uppercase
+		text-align: center
+		color: #FFF
+.top__tel
+	position: relative
+	margin-top: 25px
+	margin-right: 50px
+	color: #FFF
+	font-size: 20px
+	border-bottom: 1px dotted #fff
+	float: left
+	&:hover
+		border-bottom-color: $n
+.icon_tel
+	position: absolute
+	top: 10px
+	left: -21px
+	+s(icon_tel)
 
+.header__bottom
+	position: absolute
+	bottom: 0
+	height: 55px
+	width: 980px
+	left: 50%
+	margin-left: -490px
+	z-index: 110
 
+.header__menu
+	position: relative
+	font-size: 0
+	.has__sub
+		&:before
+			content: ""
+			position: absolute
+			bottom: -3px
+			width: 160px
+			height: 3px
+			background-color: $red
+			z-index: 121
+			display: none
+		&:after
+			content: ""
+			position: absolute
+			bottom: -7px
+			left: 75px
+			+arr(7, 4, $red, b)
+			z-index: 121
+			display: none
+	&_item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		&:hover
+			.header__submenu
+				display: block
+			&.has__sub::before,
+			&.has__sub::after
+				display: block
+	&_link
+		display: block
+		font-size: 18px
+		color: #FFF
+		line-height: 55px
+		margin: 0 20px
+		+un
+		&:hover
+			color: $red
+		&:after
+			content: ""
+			position: absolute
+			top: 6px
+			right: 0
+			width: 1px
+			height: 42px
+			background-color: rgba(208, 208, 208, .6)
 
-
-
-
-
-
-
-
-
-
-
-
-
+.header__submenu
+	position: absolute
+	display: none
+	top: 56px
+	left: 0
+	width: 160px
+	padding: 17px 0 10px
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.11)
+	z-index: 120
+	background-color: #FFF
+	&_item
+		position: relative
+		display: block
+		width: 80%
+		margin: 0 auto
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			left: -10px
+			+s(td)
+		&:last-child a
+			border-bottom: none
+	&_link
+		display: block
+		line-height: 26px
+		color: #747474
+		font-size: 15px
+		border-bottom: 1px solid #e1e1e1
+		&:hover
+			color: #222121
 
 
 
