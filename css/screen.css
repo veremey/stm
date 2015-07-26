@@ -42,6 +42,9 @@ a { text-decoration: none; }
 .c_container { position: relative; width: 304px; padding: 0 15px; float: right; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .c_container:after { content: " "; display: table; clear: both; }
 
+.header { position: relative; height: 145px; background-image: url("../img/header.png"); *zoom: 1; }
+.header:after { content: " "; display: table; clear: both; }
+
 .first { position: relative; height: 529px; }
 
 .header__top { position: relative; z-index: 120; }
