@@ -88,10 +88,9 @@ a
 
 .out
 	position: relative
-	margin: 0 auto -300px //-302 footer height
+	margin: 0 auto -302px //-302 footer height
 	min-height: 100%
 	height: auto
-	background-color: #ccc // del
 	+clr
 
 .l_container
@@ -100,6 +99,18 @@ a
 	padding: 0 15px
 	margin: 0 auto
 	+clr
+.b_container
+	position: relative
+	width: 636px
+	float: left
+	+clr
+.c_container
+	position: relative
+	width: 274px
+	padding: 0 15px
+	float: right
+	+box
+	+clr
 
 .first
 	position: relative
@@ -107,7 +118,7 @@ a
 .header__top
 	position: relative
 	z-index: 120
-.top__logo
+.logo
 	margin: 8px 0
 	float: left
 	a
@@ -152,6 +163,7 @@ a
 .header__menu
 	position: relative
 	font-size: 0
+	float: left
 	.has__sub
 		&:before
 			content: ""
@@ -229,19 +241,147 @@ a
 		border-bottom: 1px solid #e1e1e1
 		&:hover
 			color: #222121
+.header__search
+	position: relative
+	margin-top: 15px
+	float: right
+	input
+		width: 232px
+		height: 30px
+		box-shadow: 0.956px 0.292px 2px 0px rgba(0, 0, 0, 0.03),inset 0.906px 0.423px 3px 0px rgba(0, 0, 0, 0.2)
+		color: #fff
+		font-size: 15px
+		line-height: 28px
+		padding: 0 28px 0 14px
+		background-color: rgba(75, 75, 75, .4)
+		+ul
+	button
+		position: absolute
+		background-color: $n
+		top: 7px
+		right: 10px
+		+s(lupa)
 
+// ######### footer
 
+.push
+	clear: both
+	height: 302px
+.footer
+	position: relative
+	display: block
+	height: 305px
+	background-image: url("../img/f_bg.png")
+	+clr
+	h3
+		position: relative
+		color: #fff
+		text-transform: uppercase
+		font-size: 15px
+		+ub
+		&:before
+			content: ""
+			position: absolute
+			top: 8px
+			left: -12px
+			width: 6px
+			height: 6px
+			background-color: #fff
+			-webkit-border-radius: 50%
+			border-radius: 50%
+.f_menu
+	width: 33%
+	float: left
+	margin-top: 15px
+	+box
+	+clr
+	a
+		display: inline-block
+		color: #4B4B4B
+		font-size: 13px
+		vertical-align: top
+		line-height: 22px
+		text-decoration: underline
+		+un
+		&:hover
+			text-decoration: none
 
+.f_contakt
+	margin-top: 15px
+	margin-left: 10px
+	&_address,
+	&_tel p,
+	&_mail a
+		position: relative
+		color: #4B4B4B
+		font-size: 13px
+		vertical-align: top
+		line-height: 22px
+		+un
+	&_address
+		margin-left: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 7px
+			left: -28px
+			+s(locate)
+	&_tel
+		position: relative
+		margin-left: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 7px
+			left: -28px
+			+s(f_tel)
+	&_mail
+		position: relative
+		margin-left: 15px
+		a
+			display: block
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&:before
+			content: ''
+			position: absolute
+			top: 7px
+			left: -28px
+			+s(f_mail)
+.f_logo
+	margin-top: 15px
+	float: left
+	+clr
+.f_logo_contant
+	position: relative
+	width: 200px
+	float: left
+	color: #4B4B4B
+	padding-left: 8px
+	margin-top: 5px
+	+un
+	&:before
+		content: ""
+		position: absolute
+		top: 3px
+		left: 0
+		width: 2px
+		height: 98%
+		background-color: #4B4B4B
 
+.calc
+	float: right
+	margin-top: 50px
 
-
-
-
-
-
-
-
-
+.copy
+	position: absolute
+	bottom: 12px
+	left: 50%
+	color: #DCDDDB
+	font-size: 13px
+	+translate(-50%, 0)
+	+un
 
 
 
