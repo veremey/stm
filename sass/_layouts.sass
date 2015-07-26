@@ -3,21 +3,24 @@
 	background: #fff url("../img/cont1.png") no-repeat 100% 0%
 	background-size: cover
 	+clr
+
+
 // index
 
 .about
-	padding: 60px 0 90px
+	padding: 60px 0 78px
 	+clr
 	.text_right
-		width: 532px
-		padding-left: 90px
+		width: 509px
+		padding-left: 124px
+		padding-right: 15px
+		margin-left: -47px
+	.l_container
+		+box
 .big__title
 	font-size: 45px
 	width: 100%
 	height: 78px
-	padding-left: 15px
-	padding-right: 15px
-	margin-left: -15px
 	text-align: center
 	color: #FFF
 	text-transform: uppercase
@@ -30,41 +33,134 @@
 	position: relative
 	width: 210px
 	float: left
-	margin: -60px 20px 0 15px
+	margin: -60px 27px 0 -18px
 	img
 		width: 203px
 		height: 153px
 		-webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, .9)
 		box-shadow: 0 0 7px rgba(0, 0, 0, .9)
-		margin-bottom: 15px
+		margin-bottom: 10px
 .about__text
-	margin: 35px 35px 0 0
+	margin: 29px 30px 0 0
 	p
 		font-size: 13px
-		color: #4B4B4B
+		line-height: 21px
+		color: #4B4B4Bpx
 		+ul
 
+.sota
+	position: relative
+	background-image: url("../img/sota.png")
+	height: 537px
+	margin-top: 22px
+	margin-left: -15px
+	&__center
+		width: 150px
+		height: 76px
+		+vcenter
+		p
+			color: #363636
+			font-size: 20px
+			text-transform: uppercase
+			+hl
+	&__1,
+	&__2,
+	&__3,
+	&__4,
+	&__5
+		position: relative
+		text-align: center
+		&:hover
+			i
+				+scale(1.1)
+				+tr(1s)
+		i
+			position: absolute
+		span
+			font-size: 13px
+			color: #363636
+			+un
+		p
+			font-size: 13px
+			color: #767676
+			+ul
+		&:hover
+			span
+				color: $red
+	&__1
+		width: 160px
+		float: right
+		top: 50px
+		right: 73px
+		text-align: left
+		i
+			top: -5px
+			left: -56px
+			+s(d1)
+	&__2
+		width: 180px
+		float: right
+		top: 141px
+		right: -132px
+		i
+			top: 5px
+			left: -50px
+			+s(d2)
+	&__3
+		width: 135px
+		float: right
+		top: 321px
+		right: -278px
+		i
+			top: -10px
+			left: -40px
+			+s(d3)
+	&__4
+		width: 135px
+		float: left
+		top: 318px
+		left: 87px
+		i
+			top: 5px
+			left: -45px
+			+s(d4)
+	&__5
+		width: 165px
+		float: left
+		top: 103px
+		left: 60px
+		i
+			top: 0
+			left: -43px
+			+s(d5)
 
 .new__small
 	display: block
-	margin: 36px 0 47px
+	margin: 30px 0 47px
 	border-bottom: 1px dotted #999999
 	padding-bottom: 10px
 	&_wrap
 		position: relative
-		padding-bottom: 185px
-		border-bottom: 4px solid #C2C2C2
+		padding-bottom: 117px
+		border-bottom: 3px solid #C2C2C2
+		margin-left: 13px
 		+clr
+		.big__title
+			width: 116%
+			margin-left: -14px
 	&:last-child
 		border-bottom: none
 	&:hover
 		.new__small_date span,
 		h3
 			color: $red
+			+tr(.4s)
 		h3
 			border-bottom: 1px dotted $red
+			+tr(.4s)
 		img
 			border-bottom: 2px solid $red
+			+tr(.4s)
 	&_date
 		margin-bottom: 15px
 		margin-left: 10px
@@ -76,8 +172,8 @@
 			float: left
 			+hl
 		p
-			font-size: 30px
-			line-height: 35px
+			font-size: 22px
+			line-height: 28px
 			text-transform: lowercase
 			color: #fff
 			float: left
@@ -105,7 +201,7 @@
 	font-size: 13px
 	color: $red
 	position: relative
-	bottom: -188px
+	bottom: -121px
 	text-align: center
 	text-transform: uppercase
 	margin: 0 auto
@@ -117,3 +213,7 @@
 		left: 50%
 		margin-left: -15px
 		+s(more_new)
+		+tr(.5s)
+	&:hover i
+		bottom: -10px
+		+tr(.4s)

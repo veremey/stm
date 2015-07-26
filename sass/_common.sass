@@ -104,6 +104,7 @@ a
 	width: 636px
 	float: left
 	padding: 0 15px
+	+box
 	+clr
 .c_container
 	position: relative
@@ -115,7 +116,7 @@ a
 
 .first
 	position: relative
-	height: 482px
+	height: 529px
 .header__top
 	position: relative
 	z-index: 120
@@ -129,16 +130,18 @@ a
 
 .top__call
 	float: right
-	width: 430px
+	width: 400px
 	.btn
 		float: right
-		margin-top: 20px
+		margin-top: 18px
 		text-transform: uppercase
 		text-align: center
 		color: #FFF
+		font-size: 15px
+		+un
 .top__tel
 	position: relative
-	margin-top: 25px
+	margin-top: 21px
 	margin-right: 50px
 	color: #FFF
 	font-size: 20px
@@ -247,7 +250,7 @@ a
 	margin-top: 15px
 	float: right
 	input
-		width: 232px
+		width: 194px
 		height: 30px
 		box-shadow: 0.956px 0.292px 2px 0px rgba(0, 0, 0, 0.03),inset 0.906px 0.423px 3px 0px rgba(0, 0, 0, 0.2)
 		color: #fff
@@ -255,6 +258,7 @@ a
 		line-height: 28px
 		padding: 0 28px 0 14px
 		background-color: rgba(75, 75, 75, .4)
+		margin-right: 10px
 		+ul
 	button
 		position: absolute
@@ -271,8 +275,8 @@ a
 .footer
 	position: relative
 	display: block
-	height: 305px
 	background-image: url("../img/f_bg.png")
+	padding-top: 15px
 	+clr
 	h3
 		position: relative
@@ -290,15 +294,18 @@ a
 			background-color: #fff
 			-webkit-border-radius: 50%
 			border-radius: 50%
+	&__contant
+		margin-left: 15px
+		width: 100%
+		display: table
+		table-layout: fixed
 .f_menu
-	width: 33%
-	float: left
-	margin-top: 15px
-	padding-left: 15px
+	display: table-cell
+	padding-left: 150x
 	+box
 	+clr
 	a
-		display: inline-block
+		display: block
 		color: #4B4B4B
 		font-size: 13px
 		vertical-align: top
@@ -307,10 +314,6 @@ a
 		+un
 		&:hover
 			text-decoration: none
-
-.f_contakt
-	margin-top: 15px
-	margin-left: 10px
 	&_address,
 	&_tel p,
 	&_mail a
@@ -352,9 +355,12 @@ a
 			left: -28px
 			+s(f_mail)
 .f_logo
-	margin-top: 15px
+	margin-top: 37px
 	float: left
+	// margin-bottom: -13px
 	+clr
+	a
+		height: 92px
 .f_logo_contant
 	position: relative
 	width: 200px
@@ -362,6 +368,7 @@ a
 	color: #4B4B4B
 	padding-left: 8px
 	margin-top: 5px
+	margin-left: 5px
 	+un
 	&:before
 		content: ""
@@ -374,11 +381,11 @@ a
 
 .calc
 	float: right
-	margin-top: 50px
+	margin-top: 70px
 
 .copy
 	position: absolute
-	bottom: 12px
+	bottom: 11px
 	left: 50%
 	color: #DCDDDB
 	font-size: 13px
