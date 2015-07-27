@@ -13,3 +13,24 @@
 	height: 30px
 	background-color: #EB404A
 	+s(btn_red)
+
+.btn__white
+	position: relative
+	width: 178px
+	height: 38px
+	font-size: 15px
+	text-align: center
+	color: $red
+	text-transform: uppercase
+	border: 1px solid $red
+	background-color: #FFF
+	box-shadow: inset 0px -3px 0px 0px rgba(251, 71, 82, 0.8)
+	+un
+	&:hover
+		-webkit-box-shadow: none
+		box-shadow: none
+		+tr(.4s)
+
+.btn__gray
+	+s(btn_gray)
+	box-shadow: 0 0 7px rgba(0, 0, 0, .9)

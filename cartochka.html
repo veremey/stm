@@ -12,6 +12,7 @@
 	<!-- +fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -60,7 +61,7 @@
 				<div class="choice__r">
 					<h2 class="choice__name">ящик, алюминий 1.5 мм. </h2>
 					<p class="choice__article">(Артикул:  А 370 300 122)</p>
-					<p class="choice__price">48 000 руб.</p>
+					<p class="choice__price"><span>48 000</span> руб.</p>
 					<div class="characteristic">
 						<h3 class="characteristic__title">Характеристики:</h3>
 						<ul class="characteristic__l">
@@ -79,7 +80,137 @@
 						<p>Ящики данного класса  предназначены для хранения  и перевозки оборудования, важной деловой документации, печатей и прочих материальных ценностей. Ящики оборудованы замками-стыками с возможностью опломбирования и ручками для переноски</p>
 					</div>
 					<p class="choice__min">Заказ от <span>5</span> шт.</p>
+					<div class="choice__get">
+						<button class='btn__white'><i></i>Заказать</button>
+						<a href="#" class="get__img"><i></i>скачать чертёж</a>
+					</div>
 				</div>
+			</div>
+			<h2 class="site__title">
+				Сформировать индивидуальный заказ
+			</h2>
+			<h3 class="head__red">Выбор характеристик:</h3>
+
+			<table cellspacing="3" cellpadding="3" rules="rows" border="3" width="100%">
+				<tr>
+					<td class="table__side">Материал</td>
+					<td>
+						<div class="table__material">
+							<div class="metal">
+								<div class="metal__img is_active">
+									<img src="img/metal1.png" alt="">
+								</div>
+								<div class="metal__name">
+									Алюминий гладкий
+								</div>
+							</div>
+							<div class="metal">
+								<div class="metal__img">
+									<img src="http://placehold.it/52x52" alt="">
+								</div>
+								<div class="metal__name">
+									Алюминий гладкий
+								</div>
+							</div>
+							<div class="metal">
+								<div class="metal__img">
+									<img src="img/metal1.png" alt="">
+								</div>
+								<div class="metal__name">
+									Алюминий гладкий
+								</div>
+							</div>
+							<div class="metal">
+								<div class="metal__img">
+									<img src="http://placehold.it/52x52" alt="">
+								</div>
+								<div class="metal__name">
+									Алюминий гладкий
+								</div>
+							</div>
+							<div class="metal">
+								<div class="metal__img">
+									<img src="http://placehold.it/52x52" alt="">
+								</div>
+								<div class="metal__name">
+									Алюминий гладкий
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="filter__title">Толщина</div>
+						<div class="filter__thickness">
+						<div class="ui-slider js-ui-thickness"></div>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="table__side">Покрытие</td>
+					<td colspan="2">Порошковая покраска</td>
+				</tr>
+				<tr>
+					<td class="table__side">Размер</td>
+					<td colspan="2"></td>
+
+				</tr>
+				<tr>
+					<td class="table__side">Петли</td>
+					<td colspan="2">
+						<div class="brach">
+							<label class="radio">
+								<input type="radio" name="hinge" id="" checked>
+								<p>Петля накладная цинк</p>
+							</label><br/>
+							<label class="radio">
+								<input type="radio" name="hinge" id="">
+								<p>Петля накладная с ограничителем</p>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="table__side">Ручки</td>
+					<td colspan="2">
+						<div class="brach">
+							<label class="radio">
+								<input type="radio" name="helve" id="" checked>
+								<p>Ручка откидная цинк</p>
+							</label><br/>
+							<label class="radio">
+								<input type="radio" name="helve" id="">
+								<p>Ручка скрытой установки обрезиненая</p>
+							</label>
+						</div>
+					</td>
+
+				</tr>
+				<tr>
+					<td class="table__side">Замки</td>
+					<td colspan="2">
+						<div class="brach">
+							<label class="radio">
+								<input type="radio" name="lock" id="" checked>
+								<p>Замки-стяжки сталь</p>
+							</label><br/>
+							<label class="radio">
+								<input type="radio" name="lock" id="">
+								<p>Замки скрытой установки “бабочка”</p>
+							</label>
+						</div>
+					</td>
+
+				</tr>
+			</table>
+			<div class="lookup">
+				<div class="lookup__img">
+					<img id="zoom" src="img/d1.png" data-zoom-image="img/b1.png" alt="">
+				</div>
+				<div class="lookup__text">
+					<p><span>Примерная стоимость:</span> <b>45 000</b> руб.</p>
+					<p><span>Примерный вес:</span> <b>5</b> кг.</p>
+				</div>
+				<button class="btn btn__gray">Отправить запрос</button>
 			</div>
 		</div>
 	</div>

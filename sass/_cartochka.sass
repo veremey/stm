@@ -35,6 +35,8 @@
 		color: $red
 		line-height: 32px
 		+ul
+		span
+			+ub
 	&__text
 		margin-bottom: 10px
 		p
@@ -85,3 +87,220 @@
 	width: 445px
 	float: right
 
+.choice__get
+	margin-top: 35px
+	+clr
+	.btn__white
+		float: left
+		i
+			position: absolute
+			top: 11px
+			left: 27px
+			+s(btn_white)
+	.get__img
+		position: relative
+		float: right
+		margin-right: 70px
+		margin-top: 7px
+		color: $red
+		font-size: 15px
+		text-transform: lowercase
+		border-bottom: 1px dotted $red
+		+un
+		i
+			position: absolute
+			left: -38px
+			top: -5px
+			+s(mal)
+
+.site__title
+	text-transform: uppercase
+	font-size: 18px
+	color: $tc
+	text-align: center
+	line-height: 82px
+	+un
+.head__red
+	background-color: #FCC8CB
+	font-size: 18px
+	text-align: center
+	line-height: 43px
+	+un
+
+
+table
+	background-color: #FFF
+	+box
+tr
+	margin-bottom: 3px
+	&:nth-child(odd)
+		background: #EDEDED
+	&:nth-child(even)
+		background-color: #E0DFDF
+td
+	border: 3px solid #fff
+	font-size: 15px
+	color: #999
+	padding: 10px 12px 15px
+	+ul
+	+box
+	p
+		font-size: 15px
+		color: #999
+		+ul
+	b
+		font-size: 13px
+		color: $tc
+		+un
+	&:first-child
+		border-left: none
+	&:last-child
+		border-right: none
+.table__side
+	width: 190px
+	text-align: center
+	vertical-align: middle
+
+.table__material
+	width: 460px
+	margin: 0 auto
+	+clr
+.metal
+	width: 19%
+	display: inline-block
+	text-align: center
+	vertical-align: top
+	.is_active
+		border-color: $red
+	&__img
+		display: inline-block
+		border: 2px solid #fff
+		padding: 5px
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		margin-bottom: 10px
+		img
+			-webkit-border-radius: 50%
+			border-radius: 50%
+			width: 52px
+			height: 52px
+			vertical-align: top
+	&__name
+		text-align: center
+		font-size: 13px
+		color: #999
+		line-height: 16px
+.brach
+	position: relative
+.radio
+	display: inline-block
+	color: $tc
+	input
+		position: absolute
+		left: 0
+		top: 4px
+		opacity: 0
+		z-index: 2
+		&:checked
+			+ p
+				&:after
+					content: ""
+					position: absolute
+					left: -23px
+					top: 6px
+					width: 8px
+					height: 8px
+					z-index: 12
+					background-color: $red
+					-webkit-border-radius: 50%
+					border-radius: 50%
+	p
+		position: relative
+		display: inline-block
+		padding-left: 0px
+		margin-left: 25px
+		font-size: 15px
+		color: #999
+		+ul
+		&:before
+			content: ""
+			position: absolute
+			left: -25px
+			top: 4px
+			width: 10px
+			height: 10px
+			border: 1px solid #fff
+			-webkit-border-radius: 50%
+			border-radius: 50%
+			z-index: 10
+.filter__title
+	font-size: 13px
+	color: $tc
+	text-align: center
+	+un
+.filter__thickness
+	padding-top: 19px
+	width: 270px
+
+.ui-widget-content
+	position: relative
+	height: 3px
+	background-color: #C5C3C3
+.ui-slider-range
+	position: absolute
+	z-index: 1
+	top: 0
+	height: 3px
+	width: 245px
+	height: 4px
+	background-color: rgbA(210, 210, 210, .7)
+	box-shadow: inset 1px 0px 2px 0px rgba(0, 0, 0, 0.48)
+.ui-slider-handle
+	position: absolute
+	top: 50%
+	margin: -5px 0 0
+	+s(ui)
+	z-index: 2
+	span
+		display: none
+.ui-slider__top
+	.input
+		width: 36px
+		margin-top: 5px
+.js-ui-slider-from
+	float: left
+.js-ui-slider-to
+	float: right
+	margin-right: -5px
+
+
+.lookup
+	padding: 25px
+	background-color: #EDEDED
+	margin-bottom: 60px
+	+clr
+	&__img
+		position: relative
+		width: 430px
+		height: 250px
+		margin-right: 45px
+		float: left
+		background-color: #FFF
+		img
+			+vcenter
+	&__text
+		height: 165px
+		position: relative
+		margin: 20px 0
+		p,
+		b
+			font-size: 16px
+			color: #999
+			+ul
+		b
+			font-size: 22px
+			+un
+		span
+			font-size: 18px
+			color: $tc
+			+ul

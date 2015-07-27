@@ -1,0 +1,164 @@
+
+.sort
+	position: relative
+	+gh(#fb4752 50%, #989898 50%)
+	border-top: 1px solid #fb4752
+	border-bottom: 1px solid #fb4752
+	height: 63px
+	z-index: 1
+	+clr
+	&__l
+		position: relative
+		width: 180px
+		text-align: center
+		height: 64px
+		z-index: 4
+		float: left
+		font-size: 15px
+		text-transform: uppercase
+		color: #FFF
+		line-height: 70px
+		&:after
+			content: ""
+			position: absolute
+			top: -1px
+			right: -72px
+			bottom: 0
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 64px 32px 0 0
+			border-color: #fb4752 transparent transparent transparent
+	&__r
+		position: relative
+		width: 750px
+		height: 63px
+		float: right
+		margin-top: -1px
+		background-color: #989898
+		border-top: 1px solid #989898
+		border-bottom: 1px solid #989898
+		z-index: 3
+	&__gray
+		position: absolute
+		z-index: 2
+		height: 63px
+		background-color: #989898
+		border-top: 1px solid #989898
+		border-bottom: 1px solid #989898
+		top: -1px
+		width: 50%
+		right: 0
+
+.site__pages
+	height: 58px
+	float: right
+	margin-top: 47px
+	li
+		display: inline-block
+		width: 20px
+		height: 20px
+		margin-left: 10px
+		text-align: center
+		vertical-align: top
+		&:hover
+			background-color: $red
+			a
+				text-decoration: none
+				color: #FFF
+	.no_hover
+		&:hover
+			background-color: $n
+	a
+		position: relative
+		display: block
+		text-decoration: underline
+		color: $tc
+		font-size: 15px
+		+ul
+	.icon_b
+		display: block
+		+s(p_back)
+		margin-top: 5px
+	.icon_n
+		display: block
+		+s(p_next)
+		margin-top: 5px
+
+.row
+	position: relative
+	background-color: #FFF
+	z-index: 3
+	margin-bottom: 30px
+	&:before
+		position: absolute
+		content: ""
+		left: 0
+		bottom: 0
+		height: 28px
+		width: 960px
+		background-image: url("../img/row_shadow.png")
+	+ .site__pages
+		margin-top: 0
+.box
+	display: inline-block
+	vertical-align: top
+	margin: 0 18px 60px 0
+	text-align: center
+	overflow: hidden
+	&:last-child
+		margin-right: 0
+	+clr
+	&:hover
+		.box__img_wrap
+			box-shadow: inset 0 0 0 6px #4b4b4b
+			+tr(.5s)
+		.box__img_top
+			top: -100px
+			+tr(.5s)
+		.btn
+			@extend .btn__red
+	&__img
+		position: relative
+		z-index: 3
+		&_wrap
+			-webkit-box-shadow: none
+			box-shadow: none
+			+tr(.5s)
+			// box-shadow: inset 0 0 0 6px #4b4b4b
+		img
+			position: relative
+			z-index: -1
+		&_top
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			padding: 15px 0
+			background-color: #ededed
+			text-align: center
+			+tr(.5s)
+	&__title
+		text-transform: uppercase
+		font-size: 15px
+		color: $tc
+		+hr
+	&__price
+		font-size: 18px
+		color: $red
+		+un
+		span
+			+ul
+	&__text
+		text-align: left
+		margin: 20px 0
+		+clr
+	&__name
+		font-size: 15px
+		color: $tc
+		+un
+		span
+			+ul
+	.btn
+		@extend .btn__gray
+		margin: 0 auto
