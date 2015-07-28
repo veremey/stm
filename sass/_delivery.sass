@@ -1,0 +1,49 @@
+.contribute_l,
+.contribute_r
+	width: 48%
+	+clr
+.contribute_l
+	float: left
+.contribute_r
+	float: right
+.contribute_circle
+	position: relative
+	width: 276px
+	height: 273px
+	margin-left: 35px
+	background-image: url("../img/delivery_cycle.png")
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	z-index: 1
+
+
+.contribute__title
+	position: relative
+	color: #FFF
+	width: 150px
+	font-size: 30px
+	line-height: 60px
+	height: 60px
+	padding-left: 80px
+	margin-left: -35px
+	top: 110px
+	text-transform: uppercase
+	+hr
+	i
+		position: absolute
+		top: 7px
+		left: 20px
+		+s(m1)
+
+.cycle
+	position: relative
+	font-size: 15px
+	color: $tc
+	+un
+	&:before
+		content: ""
+		position: absolute
+		top: -15px
+		left: -70px
+		+s(red_cycle)
