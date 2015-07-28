@@ -1,6 +1,9 @@
 .contribute_l,
 .contribute_r
 	width: 48%
+	height: 310px
+	margin-top: 24px
+	margin-bottom: 35px
 	+clr
 .contribute_l
 	float: left
@@ -8,34 +11,36 @@
 	float: right
 .contribute_circle
 	position: relative
-	width: 276px
-	height: 273px
-	margin-left: 35px
-	background-image: url("../img/delivery_cycle.png")
-	-webkit-background-size: cover
-	-o-background-size: cover
-	background-size: cover
-	z-index: 1
-
+	img
+		position: absolute
+		top: 0
+		left: 35px
+		z-index: 1
 
 .contribute__title
 	position: relative
 	color: #FFF
-	width: 150px
+	width: 120px
 	font-size: 30px
 	line-height: 60px
 	height: 60px
-	padding-left: 80px
-	margin-left: -35px
-	top: 110px
+	padding-left: 73px
+	top: 103px
 	text-transform: uppercase
-	+hr
+	+hl
+.money
 	i
 		position: absolute
 		top: 7px
 		left: 20px
 		+s(m1)
-
+.machine
+	width: 150px
+	i
+		position: absolute
+		top: 12px
+		left: 20px
+		+s(m2)
 .cycle
 	position: relative
 	font-size: 15px
@@ -46,4 +51,103 @@
 		position: absolute
 		top: -15px
 		left: -70px
+		z-index: 2
 		+s(red_cycle)
+
+.position_1
+	top: -50px
+	left: 272px
+.position_2
+	top: 5px
+	left: 229px
+.position_3
+	top: 70px
+	left: 162px
+.position_4
+	top: 135px
+	left: 20px
+.position_5
+	top: 168px
+	left: 271px
+.position_6
+	top: -50px
+	left: 105px
+.position_7
+	top: 67px
+	left: -10px
+.position_8
+	top: 172px
+	left: 295px
+.position_1,
+.position_2,
+.position_3,
+.position_4,
+.position_5,
+.position_6,
+.position_7,
+.position_8
+	border-bottom: 1px dotted $red
+	&:hover
+		border-bottom-color: $n
+.jad,
+.ww,
+.vm,
+.card,
+.nal,
+.by_co,
+.self,
+.car
+	&:after
+		content: ""
+		position: absolute
+		z-index: 3
+		+tr(.3s)
+	&:hover::after
+		+tr(1s)
+		transform: translate(5px, 0)
+.jad
+	&:after
+		top: -1px
+		left: -60px
+		+s(jad)
+.ww
+	&:after
+		top: 1px
+		left: -60px
+		+s(wm)
+.vm
+	&:after
+		top: -2px
+		left: -60px
+		+s(vm)
+.card
+	&:after
+		top: -6px
+		left: -48px
+		+s(card)
+.nal
+	&:after
+		top: -8px
+		left: -52px
+		+s(nal)
+.by_co
+	&:after
+		top: -8px
+		left: -52px
+		+s(by_co)
+.self
+	border-bottom-color: $n
+	&:after
+		top: -8px
+		left: -52px
+		+s(self)
+.car
+	border-bottom-color: $n
+	float: left
+	width: 185px
+	&:after
+		top: 11px
+		left: -62px
+		+s(car)
+	&:before
+		top: -2px
