@@ -66,6 +66,16 @@ head.ready(function() {
 		});
 
 
+		$('.company__slider').slick({
+			dots: true,
+			infinite: false,
+			speed: 900,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			variableWidth: true,
+			adaptiveHeight: true
+		});
+
 	});// end doc ready
 
 }); // end head
