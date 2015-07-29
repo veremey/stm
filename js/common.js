@@ -76,6 +76,13 @@ head.ready(function() {
 			adaptiveHeight: true
 		});
 
+		// unswer.html
+			$('.unswer__link').on('click', function() {
+				$(this).parent().siblings().find('.unswer__text').slideUp();
+				$(this).next('.unswer__text').slideDown();
+				return false;
+			});
+
 	});// end doc ready
 
 }); // end head

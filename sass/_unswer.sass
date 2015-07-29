@@ -1,0 +1,26 @@
+.unswer
+	min-height: 400px
+	+clr
+	&__link
+		position: relative
+		display: inline-block
+		font-size: 15px
+		margin-left: 40px
+		margin-bottom: 10px
+		color: $tc
+		border-bottom: 1px dotted $red
+		&:hover
+			border-bottom-color: $n
+		i
+			position: absolute
+			top: -2px
+			left: -40px
+			+s(unswer_ico)
+	&__text
+		display: none
+		width: 350px
+		margin: 20px 0 20px 100px
+		p
+			font-size: 15px
+			color: #999
+			+ul
