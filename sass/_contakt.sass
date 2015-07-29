@@ -1,0 +1,123 @@
+.mapin
+	position: relative
+	width: 100%
+	height: 484px
+	overflow: hidden
+	padding: 1px
+	margin-bottom: 60px
+	// z-index: 9999
+	+clr
+.mapt_contant
+	width: 270px
+	height: 194px
+	background-color: #FFF
+	border-left: 5px solid $red
+
+
+.mapt__town,
+.mapt_tel a,
+.mapt_mail a
+	display: inline-block
+	margin-left: 40px
+	position: relative
+	color: $tc
+	font-size: 15px
+	+un
+
+.mapt__town
+	margin-top: 30px
+	&:before
+		content: ""
+		position: absolute
+		top: 2px
+		left: -25px
+		+s(icon-locate)
+.mapt_tel
+	position: relative
+	margin: 15px 0
+	&:before
+		content: ""
+		position: absolute
+		top: 2px
+		left: 12px
+		+s(icon_tel)
+.mapt_mail
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 2px
+		left: 12px
+		+s(ico_mail)
+
+.question
+	position: absolute
+	top: 88px
+	left: 0
+	height: 333px
+	width: 300px
+	z-index: 100
+	&__wrap
+		position: relative
+		text-align: center
+		background-color: $tc
+		border-top: 5px solid $red
+	&__title
+		font-size: 20px
+		color: #EDEDED
+		line-height: 57px
+		text-transform: uppercase
+		+hr
+	&__text
+		margin-bottom: 10px
+		+placeholder
+			font-size: 13px
+			color: #999
+			+ul
+		textarea
+			width: 195px
+			height: 90px
+			padding: 10px 35px 0 15px
+		.question__inp
+			position: relative
+			width: 195px
+			height: 34px
+			padding-right: 35px
+			padding-left: 15px
+	.btn
+		margin-bottom: 20px
+.man,
+.letter,
+.pen
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 8px
+.man
+	&:after
+		right: 34px
+		+s(man)
+
+.letter
+	&:after
+		right: 34px
+		+s(letter)
+.pen
+	&:after
+		right: 34px
+		+s(pen)
+
+.ymaps-2-1-27-map ymaps, .ymaps-2-1-27-map ymaps:before, .ymaps-2-1-27-map ymaps:after
+	background-color: $n
+.ymaps-2-1-27-balloon
+	-webkit-box-shadow: none!important
+	box-shadow: none!important
+.ymaps-2-1-27-balloon_to_top .ymaps-2-1-27-balloon__tail:after,
+.ymaps-2-1-27-balloon_to_top .ymaps-2-1-27-balloon__tail
+	display: none
+
+	.ymaps-2-1-27-controls__toolbar,
+	.ymaps-2-1-27-copyright,
+	.ymaps-2-1-27-zoom__scale
+		display: none !important
