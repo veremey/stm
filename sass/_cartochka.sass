@@ -81,8 +81,37 @@
 
 .choice__l
 	width: 495px
+	height: 400px
 	float: left
 	+clr
+
+.carousel__main
+	position: relative
+	width: 478px
+	height: 251px
+	border: 8px solid $tc
+	overflow: hidden
+	margin-bottom: 13px
+	+clr
+	&_img
+		+vcenter
+
+.carousel__preview
+	position: relative
+	width: auto
+	height: 90px
+	overflow-x: auto
+	-ms-overflow-y: hidden
+	overflow-y: hidden
+	white-space: nowrap
+	img
+		max-height: 80px
+		display: inline-block
+		margin-right: 12px
+		opacity: .6
+	.is_active
+		opacity: 1
+
 .choice__r
 	width: 445px
 	float: right
@@ -233,15 +262,44 @@ td
 			-webkit-border-radius: 50%
 			border-radius: 50%
 			z-index: 10
+
+
+
 .filter__title
+	width: 280px
 	font-size: 13px
+	margin-top: 10px
 	color: $tc
 	text-align: center
 	+un
 .filter__thickness
+	position: relative
 	padding-top: 19px
 	width: 270px
+.filter__before
+	position: absolute
+	top: -5px
+	left: 5px
+.filter__after
+	position: absolute
+	top: -5px
+	right: 5px
 
+.ui-slider
+	width: 245px
+	margin: 0 auto
+	+clr
+.ui-slider__top
+	height: 30px
+	// margin-top: 15px
+	span
+		float: left
+		margin-left: -10px
+		font-size: 13px
+		+ul
+		+ span
+			float: right
+			margin-right: -10px
 .ui-widget-content
 	position: relative
 	height: 3px
@@ -258,21 +316,51 @@ td
 .ui-slider-handle
 	position: absolute
 	top: 50%
-	margin: -5px 0 0
+	margin: -16px 0 0 -13px
 	+s(ui)
 	z-index: 2
 	span
-		display: none
-.ui-slider__top
-	.input
-		width: 36px
-		margin-top: 5px
-.js-ui-slider-from
-	float: left
-.js-ui-slider-to
-	float: right
-	margin-right: -5px
+		display: block
+		margin-top: 22px
+		color: $red
+		font-size: 13px
+		+ul
 
+.parametr__title
+	float: left
+	font-size: 13px
+	color: #999
+	display: inline-block
+	line-height: 46px
+	+ul
+.filter__lenth,
+.filter__height,
+.filter__width
+	width: 375px
+	display: inline-block
+	margin-right: 10px
+	+clr
+	&:nth-child(2n)
+		margin-right: 0
+.js-lenth-slider,
+.js-height-slider,
+.js-width-slider
+	position: relative
+	float: right
+	background-color: #FFF
+	width: 316px
+	height: 46px
+	.ui-slider__top
+		+coverdiv
+		span
+			margin-left: 20px
+			margin-top: 12px
+			+ span
+				margin-right: 5px
+
+	.ui-slider
+		width: 165px
+		top: 20px
 
 .lookup
 	padding: 25px

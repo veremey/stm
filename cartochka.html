@@ -9,6 +9,7 @@
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link rel="stylesheet" media="all" href="css/jquery.jscrollpane.css" >
 	<!-- +fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
@@ -57,7 +58,25 @@
 			</ul>
 			<div class="clear"></div>
 			<div class="choice">
-				<div class="choice__l"></div>
+				<div class="choice__l">
+					<div class="carousel">
+						<div class="carousel__main js-carousel">
+							<div class="carousel__main_img">
+								<img src="img/d1.png" width="494" height="267" alt="img">
+							</div>
+						</div>
+						<div class="carousel__preview js-scroll-pane js-take-img">
+							<!-- <div  class="fuck"> -->
+							<img class="is_active" src="img/ba1.png" width="112" height="83" alt="img">
+							<img src="img/ba1.png" width="112" height="83" alt="img">
+							<img src="img/ba1.png" width="112" height="83" alt="img">
+							<img src="img/ba1.png" width="112" height="83" alt="img">
+							<img src="img/ba1.png" width="112" height="83" alt="img">
+							<img src="img/ba1.png" width="112" height="83" alt="img">
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
 				<div class="choice__r">
 					<h2 class="choice__name">ящик, алюминий 1.5 мм. </h2>
 					<p class="choice__article">(Артикул:  А 370 300 122)</p>
@@ -140,9 +159,13 @@
 					</td>
 					<td>
 						<div class="filter__title">Толщина</div>
-						<div class="filter__thickness">
-						<div class="ui-slider js-ui-thickness"></div>
-					</div>
+						<div class="ui-slider js-ui-slider">
+						    <div class="ui-slider__top">
+						        <span>1мм.</span>
+										<span>3мм.</span>
+						    </div>
+						    <div class="js-ui-slider-main"></div>
+						</div>
 					</td>
 				</tr>
 				<tr>
@@ -151,7 +174,38 @@
 				</tr>
 				<tr>
 					<td class="table__side">Размер</td>
-					<td colspan="2"></td>
+					<td colspan="2">
+						<div class="filter__lenth">
+							<h4 class="parametr__title">Длина</h4>
+							<div class="ui-slider js-lenth-slider">
+							    <div class="ui-slider__top">
+							        <span>150мм.</span>
+											<span>4500мм.</span>
+							    </div>
+							    <div class="js-ui-slider-main"></div>
+							</div>
+						</div>
+						<div class="filter__width">
+							<h4 class="parametr__title">Ширина</h4>
+							<div class="ui-slider js-width-slider">
+							    <div class="ui-slider__top">
+							        <span>150мм.</span>
+											<span>4500мм.</span>
+							    </div>
+							    <div class="js-ui-slider-main"></div>
+							</div>
+						</div>
+						<div class="filter__height">
+							<h4 class="parametr__title">Высота</h4>
+							<div class="ui-slider js-height-slider">
+							    <div class="ui-slider__top">
+							        <span>150мм.</span>
+											<span>4500мм.</span>
+							    </div>
+							    <div class="js-ui-slider-main"></div>
+							</div>
+						</div>
+					</td>
 
 				</tr>
 				<tr>
