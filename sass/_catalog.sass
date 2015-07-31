@@ -5,11 +5,11 @@
 	border-top: 1px solid #fb4752
 	border-bottom: 1px solid #fb4752
 	height: 63px
-	z-index: 1
+	z-index: 10
 	+clr
 	&__l
 		position: relative
-		width: 180px
+		width: 147px
 		text-align: center
 		height: 64px
 		z-index: 4
@@ -31,7 +31,7 @@
 			border-color: #fb4752 transparent transparent transparent
 	&__r
 		position: relative
-		width: 750px
+		width: 783px
 		height: 63px
 		float: right
 		margin-top: -1px
@@ -52,11 +52,13 @@
 
 .sort__wrap
 	position: relative
-	width: 250px
 	display: inline-block
-	margin-right: 15px
-	margin-left: 40px
+	margin-right: 20px
 	+clr
+	&:first-child
+		margin-left: 40px
+	&:last-child
+		margin-right: 0
 .sort__title
 	font-size: 15px
 	color: #E3E3E3
@@ -71,6 +73,10 @@
 	vertical-align: middle
 	width: 163px
 	margin-top: -3px
+
+.small__field
+	width: 132px
+
 
 .select
 	position: relative
@@ -122,6 +128,8 @@
 		height: 50%
 		width: 15px
 		+arr(9, 6, #808080, b)
+.gray__list_text
+	color: $tc
 .select__list
 	position: absolute
 	display: none
@@ -143,11 +151,25 @@
 	+ul
 	&:hover
 		background-color: #ccc
+	h4
+		text-align: center
+	span
+		font-size: 13px
+		color: $tc
+		margin-left: 14px
 
 
 
+.param
+	position: relative
+	display: inline-block
 
 
+
+.param__list
+	position: absolute
+	top: 35px
+	left: 50px
 
 
 
@@ -167,7 +189,7 @@
 		display: inline-block
 		width: 20px
 		height: 20px
-		margin-left: 10px
+		margin-left: 1px
 		text-align: center
 		vertical-align: top
 		&:hover
