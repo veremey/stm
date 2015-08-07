@@ -195,7 +195,8 @@ head.ready(function() {
 
 				$('.js-take-img img').click( function() {
 					var src = $('.is_active').attr('src');
-					var carousel = $(this).parents('.carousel')
+					var carousel = $(this).parents('.carousel');
+
 					$(this).siblings().removeClass('is_active');
 					$(this).addClass('is_active');
 					// alert($('.is_active').text(src));

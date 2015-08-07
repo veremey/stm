@@ -44,6 +44,8 @@ a
 	margin: 0 auto -9px//-302px //-302 footer height
 	min-height: 100%
 	height: auto
+	min-width: 1020px
+	width: 100%
 	+clr
 
 .l_container
@@ -79,6 +81,7 @@ a
 .header__top
 	position: relative
 	z-index: 120
+	margin-bottom: -35px
 .logo
 	margin: 8px 0
 	float: left
@@ -115,14 +118,17 @@ a
 	+s(icon_tel)
 
 .header__bottom
-	position: absolute
-	bottom: 0
+	position: relative
+	// bottom: 0
 	height: 55px
 	width: 980px
-	left: 50%
-	margin-left: -490px
+	// left: 50%
+	// margin-left: -490px
 	z-index: 121
+	margin: 0 auto
 
+.mt350
+	margin-top: 350px
 .header__menu
 	position: relative
 	font-size: 0
@@ -236,6 +242,8 @@ a
 	display: block
 	background-image: url("../img/f_bg.png")
 	padding-top: 15px
+	width: 100%
+	min-width: 1020px
 	+clr
 	h3
 		position: relative
