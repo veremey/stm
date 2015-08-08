@@ -62,7 +62,7 @@ a { text-decoration: none; }
 
 .header__bottom { position: relative; height: 55px; width: 980px; z-index: 121; margin: 0 auto; }
 
-.mt350 { margin-top: 350px; }
+.mt385 { margin-top: 385px; }
 
 .header__menu { position: relative; font-size: 0; float: left; }
 .header__menu .has__sub:before { content: ""; position: absolute; bottom: -3px; width: 160px; height: 3px; background-color: #fb4752; z-index: 121; display: none; }
@@ -215,7 +215,7 @@ a { text-decoration: none; }
 .about__img { position: relative; width: 210px; float: left; margin: -60px 27px 0 -18px; }
 .about__img img { width: 203px; height: 153px; -webkit-box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.9); box-shadow: 0 0 7px rgba(0, 0, 0, 0.9); margin-bottom: 10px; }
 
-.about__text { margin: 29px 30px 0 0; }
+.about__text { margin: 29px 30px 0 0; float: right; width: 350px; }
 .about__text p { font-size: 13px; line-height: 21px; color: #4B4B4B px; font-family: "Ubuntu", Arial, sans-serif; font-weight: 300; }
 
 .sota { position: relative; background-image: url("../img/sota.png"); height: 537px; margin-top: 22px; margin-left: -15px; }
