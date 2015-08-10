@@ -6,4 +6,6 @@ head.load("js/lib/jquery.js",
 					"js/jquery.jscrollpane.js",
 					"js/jquery.mousewheel.js",
 					"js/yandexMapInit.js",
+					"js/jquery.ui.touch-punch.min.js",
+					"js/lightbox.js",
 					"js/common.js");

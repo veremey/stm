@@ -175,6 +175,10 @@ head.ready(function() {
 			adaptiveHeight: true
 		});
 
+		// light box
+
+
+
 		// unswer.html
 			$('.unswer__link').on('click', function() {
 				$(this).parent().siblings().find('.unswer__text').slideUp();
@@ -193,15 +197,15 @@ head.ready(function() {
 
 				// подмена картинки
 
-				$('.js-take-img img').click( function() {
-					var src = $('.is_active').attr('src');
-					var carousel = $(this).parents('.carousel');
+				// $('.js-take-img img').click( function() {
+				// 	var src = $('.is_active').attr('src');
+				// 	var carousel = $(this).parents('.carousel');
 
-					$(this).siblings().removeClass('is_active');
-					$(this).addClass('is_active');
-					// alert($('.is_active').text(src));
-					carousel.find('.carousel__main_img img').attr('src', carousel.find('.is_active').attr('src'));
-				});
+				// 	$(this).siblings().removeClass('is_active');
+				// 	$(this).addClass('is_active');
+				// 	// alert($('.is_active').text(src));
+				// 	carousel.find('.carousel__main_img img').attr('src', carousel.find('.is_active').attr('src'));
+				// });
 
 
 

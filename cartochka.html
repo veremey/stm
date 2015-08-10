@@ -4,12 +4,14 @@
 	<meta charset="utf-8">
 	<title>Cartochka</title>
 	<meta name="viewport" content="width=1200">
+	<script></script>
 	<meta name="format-detection" content="telephone=no">
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<link rel="stylesheet" media="all" href="css/jquery.jscrollpane.css" >
+	<link href="css/lightbox.css" rel="stylesheet" />
 	<!-- +fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
@@ -62,17 +64,29 @@
 					<div class="carousel">
 						<div class="carousel__main js-carousel">
 							<i class="watter__img"></i>
-							<div class="carousel__main_img">
-								<img src="img/d1.png" width="494" height="267" alt="img">
-							</div>
+							<a href="#" class="carousel__main_img" data-lightbox="roadtrip">
+								<img src="img/d1.png" width="494" height="267" alt="img" >
+							</a>
 						</div>
 						<div class="carousel__preview js-scroll-pane js-take-img">
-							<img class="is_active" src="img/ba1.png" width="112" height="83" alt="img">
-							<img src="img/ba1.png" width="112" height="83" alt="img">
-							<img src="img/ba1.png" width="112" height="83" alt="img">
-							<img src="img/ba1.png" width="112" height="83" alt="img">
-							<img src="img/ba1.png" width="112" height="83" alt="img">
-							<img src="img/ba1.png" width="112" height="83" alt="img">
+							<a href="http://placehold.it/500/500"  data-lightbox="roadtrip" >
+								<img class="is_active" src="img/ba1.png" width="112" height="83" alt="img">
+							</a>
+							<a href="http://placehold.it/700/500"  data-lightbox="roadtrip" >
+								<img src="img/ba1.png" width="112" height="83" alt="img">
+							</a>
+							<a href="img/ba1.png"  data-lightbox="roadtrip" >
+								<img src="img/ba1.png" width="112" height="83" alt="img">
+							</a>
+							<a href="img/ba1.png"  data-lightbox="roadtrip" >
+								<img src="img/ba1.png" width="112" height="83" alt="img">
+							</a>
+							<a href="img/ba1.png"  data-lightbox="roadtrip" >
+								<img src="img/ba1.png" width="112" height="83" alt="img">
+							</a>
+							<a href="img/ba1.png"  data-lightbox="roadtrip" >
+								<img src="img/ba1.png" width="112" height="83" alt="img">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -325,5 +339,13 @@
 </div>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+<script> $('.ui-slider').draggable();</script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true
+    })
+</script>
 </body>
 </html>
