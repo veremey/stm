@@ -47,7 +47,7 @@ a { text-decoration: none; }
 
 .first { position: relative; height: 529px; }
 
-.header__top { position: relative; z-index: 120; margin-bottom: -35px; }
+.header__top { position: relative; z-index: 120; }
 
 .logo { margin: 8px 0; float: left; }
 .logo a { background: url('../img/icons-s81f22e1db2.png') 0 -2021px no-repeat; width: 166px; height: 105px; display: block; font: 0/0 a; text-shadow: none; color: transparent; }
@@ -60,7 +60,7 @@ a { text-decoration: none; }
 
 .icon_tel { position: absolute; top: 10px; left: -21px; background: url('../img/icons-s81f22e1db2.png') 0 -794px no-repeat; width: 19px; height: 19px; }
 
-.header__bottom { position: relative; height: 55px; width: 980px; z-index: 121; margin: 0 auto; }
+.header__bottom { position: relative; top: -39px; height: 55px; width: 980px; z-index: 121; margin: 0 auto; }
 
 .mt385 { margin-top: 385px; }
 
