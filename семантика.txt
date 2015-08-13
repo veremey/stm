@@ -1,0 +1,42 @@
+Вот история изменений для ИЕ + мазилла https://github.com/veremey/stm/commit/d30a602b3f5ff7cc76f873b77c25606401785d8d
+
+история изменений для валидации кода:
+https://github.com/veremey/stm/commit/61db2e3543d75b5cc08c1108bf07b37a05eb3b0e
+
+Проверка верстки  на валидаторе:
+
+	Главная:
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2F
+2 ошибки они присудствуют на всех страницах - подключение шрифтов, если убрать указаный знак - полетят все шрифты!  (в остальных страницах о них не упоминаю)
+
+	about.html:
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Fabout.html
+1 - косую воспринимает как не закрытый тег, если убрать нарушится вид дизайна хлебных крошек (в остальных страницах о них не упоминаю где есть хлебные крошки)
+
+	cartochka.html
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Fcartochka.html
+1 - но повторяется, для правильного функционала и правильного отображения, как на дизайне, выпадающего списка - сделан такой хак - он не нарушает работу сайта.
+
+	catalog.html
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Fcatalog.html
+1 - но повторяется, этот тег правильнее использовать в данном случаее нежели все остальные, на дизайне это кнопка - сделано кнопкой, ссылки в ссылках располагать нельзя да и они работать не будут.
+
+	client.html
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Fclient.html
+0 - писалось ранее
+
+	contakt.html
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Fcontakt.html
+0 - писалось ранее
+
+	delivery.html
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Fdelivery.html
+0 - писалось ранее
+
+	news.html
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Fnews.html
+0 - писалось ранее
+
+	unswer.html
+https://validator.w3.org/nu/?doc=http%3A%2F%2Fveremey.github.io%2Fstm%2Funswer.html
+0 - писалось ранее
