@@ -16,7 +16,7 @@ GitHub: [https://github.com/veremey](https://github.com/veremey)
 
 myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRnAtXPieYcpJr0OF9VwT0)
 
-### Страница рабочего сайтаЖ
+### Страница рабочего сайта:
 
 [http://www.stm-group.su/](http://www.stm-group.su/)
 
