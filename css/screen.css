@@ -33,6 +33,14 @@ a { text-decoration: none; }
 .out { position: relative; margin: 0 auto -39px; height: auto; min-width: 1020px; width: 100%; *zoom: 1; }
 .out:after { content: " "; display: table; clear: both; }
 
+.presentation-bg { background: url(../img/bg.jpg) repeat 50% 50% #c4e3fc; }
+
+.site__presentation { position: relative; top: 50px; background-color: rgba(0, 0, 0, 0.7); margin: 0 auto 50px; width: 40%; min-width: 300px; padding: 30px 50px; border-radius: 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.site__presentation li { margin-bottom: 10px; }
+.site__presentation a { position: relative; font-size: 16px; color: #f1f1f1; text-decoration: none; font-family: "Ubuntu", Arial, sans-serif; font-weight: 400; }
+.site__presentation a:hover { color: #52abf0; }
+.site__presentation a:visited { color: #eb6c96; }
+
 .l_container { position: relative; width: 970px; padding: 0 15px; margin: 0 auto; *zoom: 1; }
 .l_container:after { content: " "; display: table; clear: both; }
 
